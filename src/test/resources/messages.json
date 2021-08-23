@@ -1,0 +1,38 @@
+[
+  {
+    "device_id": "1",
+    "value": {
+      "reading": {
+        "value0": 0,
+        "value1": 1000,
+        "value2": 1,
+        "expect_score": 3,
+        "expect_score_percentage": 60
+      }
+    }
+  },
+  {
+    "device_id": "2",
+    "value": {
+      "reading": {
+        "value0": -1,
+        "value1": 0.0,
+        "value2": -5,
+        "expect_score": 0,
+        "expect_score_percentage": 0
+      }
+    }
+  },
+  {
+    "device_id": "1",
+    "value": {
+      "reading": {
+        "value0": 2,
+        "value1": 0.0,
+        "value2": 10,
+        "expect_score": 5,
+        "expect_score_percentage": 100
+      }
+    }
+  }
+]

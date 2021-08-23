@@ -1,0 +1,42 @@
+{
+  "config": {
+    "value0_threshold": "0",
+    "value0_upper_limit": "false",
+    "value0_points": "2",
+    "value1_threshold": "10",
+    "value1_upper_limit": "true",
+    "value1_points": "0",
+    "value2_threshold": "-5",
+    "value2_upper_limit": "false",
+    "value2_points": "3"
+  },
+  "inputTopics": [
+    {
+      "Name": "test",
+      "FilterType": "DeviceId",
+      "FilterValue": "1,2",
+      "Mappings": [
+        {
+          "Dest": "value0",
+          "Source": "value.reading.value0"
+        },
+        {
+          "Dest": "value1",
+          "Source": "value.reading.value1"
+        },
+        {
+          "Dest": "value2",
+          "Source": "value.reading.value2"
+        },
+        {
+          "Dest": "expect_score",
+          "Source": "value.reading.expect_score"
+        },
+        {
+          "Dest": "expect_score_percentage",
+          "Source": "value.reading.expect_score_percentage"
+        }
+      ]
+    }
+  ]
+}
