@@ -34,5 +34,5 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            smartenergyplatform/analytics-operator-flex-threshold:dev
-            ghcr.io/senergy-platform/analytics-operator-flex-threshold:dev
+            smartenergyplatform/analytics-operator-flex-threshold2:dev
+            ghcr.io/senergy-platform/analytics-operator-flex-threshold2:dev
