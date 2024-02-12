@@ -4,8 +4,6 @@ ADD pom.xml /usr/src/app
 WORKDIR /usr/src/app
 RUN mvn clean install
 
-FROM openjdk:11-jre-slim
+FROM ghcr.io/senergy-platform/analytics-operator-base:latest
 ENV NAME flex-threshold
 COPY --from=builder /usr/src/app/target/operator-${NAME}-jar-with-dependencies.jar /opt/operator.jar
-ADD https://github.com/jmxtrans/jmxtrans-agent/releases/download/jmxtrans-agent-1.2.6/jmxtrans-agent-1.2.6.jar opt/jmxtrans-agent.jar
-CMD ["java","-jar","/opt/operator.jar"]
